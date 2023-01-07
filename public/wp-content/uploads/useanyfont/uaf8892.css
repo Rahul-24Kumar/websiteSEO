@@ -1,0 +1,13 @@
+				@font-face {
+					font-family: 'nexa-bold';
+					src: url('4248Nexa-Bold.woff2') format('woff2'),
+						url('4248Nexa-Bold.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.nexa-bold{font-family: 'nexa-bold' !important;}
+
+						h1, h2, h3, h4, h5, h6, body.page .entry-title{
+					font-family: 'nexa-bold' !important;
+				}
+		
