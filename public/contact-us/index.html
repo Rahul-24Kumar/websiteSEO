@@ -2853,32 +2853,32 @@ Message</textarea>
 
 
                         <script>
-                          function validate(req, res) {
-                            let x = document.forms["myForm1"]["name"].value;
+                          function validates(req, res) {
+                            let x = document.forms["myForm"]["name"].value;
                             if (x == "") {
                               alert("Name must be filled out");
                               return false;
                             }
 
-                            let y = document.forms["myForm1"]["email"].value;
+                            let y = document.forms["myForm"]["email"].value;
                             if (y == "") {
                               alert("Email must be filled out");
                               return false;
                             }
 
-                            let z = document.forms["myForm1"]["number"].value;
+                            let z = document.forms["myForm"]["number"].value;
                             if (z == "") {
                               alert("Mobile must be filled out");
                               return false;
                             }
 
-                            let q = document.forms["myForm1"]["subject"].value;
+                            let q = document.forms["myForm"]["subject"].value;
                             if (q == "") {
                               alert("Subject must be filled out");
                               return false;
                             }
 
-                            let t = document.forms["myForm1"]["message"].value;
+                            let t = document.forms["myForm"]["message"].value;
                             if (t == "") {
                               alert("Message must be filled out");
                               return false;
@@ -2886,10 +2886,10 @@ Message</textarea>
                             alert("message submitted successfully!");
 
                           }
-
+                          // alert("message submitted successfully!");
                         </script>
 
-                        <form action="/handleData" method="post" name="myForm1" onsubmit="return validate()">
+                        <form action="/handleData" method="post" name="myForm" onsubmit="return validates()">
                           <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" pattern="^[A-Za-zÀ-ÿ ,.'-]+$"
                               title="Invalid name format" placeholder="Name" />
@@ -3402,7 +3402,10 @@ Message</textarea>
               }
               alert("message submitted successfully!");
             }
+
+            
           </script>
+
           <form action="/handleData" method="post" name="myForm1" onsubmit="return validate()">
             <div class="form-group">
               <input type="text" class="form-control" id="name1" name="name" pattern="^[A-Za-zÀ-ÿ ,.'-]+$"
